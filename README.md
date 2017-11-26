@@ -1,4 +1,4 @@
-# Vorbereitung vom 23.11.2017
+# Klausurvorbereitung vom 23.11.2017
 
 ## Informationen
 
@@ -18,7 +18,7 @@
 </table>  
 
 ## Lösungen
-* [Lukas'](/LukasLoesung.java)
+* [Lukas'](/loesungen/lukas.java)
 
 ## Getestet auf
 [Online Java IDE](https://www.compilejava.net/)
