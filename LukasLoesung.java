@@ -7,18 +7,31 @@ public class LukasLoesung {
     Liste liste = new Liste();
 
     liste.vorneEinfuegen(new Datenelement("Lukasteilchen", 22));
-	liste.vorneEinfuegen(new Datenelement("Danyloteilchen", 11));
-	liste.vorneEinfuegen(new Datenelement("Albertteilchen", 33));
+    liste.vorneEinfuegen(new Datenelement("Danyloteilchen", 11));
+    liste.vorneEinfuegen(new Datenelement("Albertteilchen", 33));
 
-    System.out.println("Das erste Teilchen wiegt: " + liste.ersterGeben().inhaltGeben().gewichtGeben() + " willkürliche Einheiten.");
-    System.out.println("Das schwerste Teilchen wiegt: " + liste.maximalgewichtGeben());
+    System.out.println(
+      "Das erste Teilchen wiegt: " +
+      liste.ersterGeben().inhaltGeben().gewichtGeben() +
+      " willkürliche Einheiten.");
+
+    System.out.println("Das schwerste Teilchen wiegt: " +
+      liste.maximalgewichtGeben());
 
     liste.vorneEntnehmen();
     System.out.println("Ein Teilchen ist jetzt verwahrlost.");
-    System.out.println("Nun wiegt das aktuelle erste Teilchen: " + liste.ersterGeben().inhaltGeben().gewichtGeben() + " willkürliche Einheiten.");
-    System.out.println("Und das schwerste Teilchen wiegt: " + liste.maximalgewichtGeben());
 
-    System.out.println("Die Teilchen innerhalb der Liste wiegen gemeinsam: " + liste.gesamtgewichtGeben() + " willkürliche Einheiten.");
+    System.out.println(
+      "Nun wiegt das aktuelle erste Teilchen: " +
+      liste.ersterGeben().inhaltGeben().gewichtGeben() +
+      " willkürliche Einheiten.");
+
+    System.out.println(
+      "Und das schwerste Teilchen wiegt: " +
+      liste.maximalgewichtGeben());
+
+    System.out.println("Die Teilchen innerhalb der Liste wiegen gemeinsam: " +
+      liste.gesamtgewichtGeben() + " willkürliche Einheiten.");
 
   }
 }
@@ -84,7 +97,11 @@ class Knoten extends Listenelement {
 
   Listenelement naechsterGeben() { return this.naechster; }
   Datenelement inhaltGeben() { return this.inhalt; }
-  int gesamtgewichtGeben() { return this.inhaltGeben().gewichtGeben() + this.naechsterGeben().gesamtgewichtGeben(); }
+
+  int gesamtgewichtGeben() {
+    return  this.inhaltGeben().gewichtGeben() +
+            this.naechsterGeben().gesamtgewichtGeben();
+  }
 
   int maximalgewichtGeben(int max) {
     if (max > this.inhaltGeben().gewichtGeben()) {
