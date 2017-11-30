@@ -19,7 +19,7 @@
 
 ## Lösungen
 * [Lukas'](/loesungen/lukas.java)
-* [Danylos'](/loesungen/danylo.java)
+* [Danylos](/loesungen/danylo.java)
 
 ## Getestet auf
 [Online Java IDE](https://www.compilejava.net/)
