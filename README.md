@@ -17,6 +17,9 @@
 </tr>
 </table>  
 
+## Diagramm
+![Das Diagramm](https://github.com/holbein/vorbereitung-klausur-semester1-oberstufe1719/blob/master/loesungen/klassendiagramm.jpg)
+
 ## Lösungen
 * [Lukas'](/loesungen/lukas.java)
 * [Danylos](/loesungen/danylo.java)
